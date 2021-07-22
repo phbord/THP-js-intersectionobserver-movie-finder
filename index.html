@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+                rel="stylesheet" 
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1>Movie Finder</h1>
+
+            <!-- Search Form -->
+            <form id="search-movies-form" class="row gx-3 gy-2 align-items-center mt-5">
+                <div class="col-auto">
+                    <div class="form-check">
+                        <label class="visually-hidden" for="movie-search">Name</label>
+                        <input type="text" 
+                                class="form-control" 
+                                id="movie-search" 
+                                placeholder="Harry Potter">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+
+            <!-- List -->
+            <ul id="search-list" class="mt-5"></ul>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" 
+            id="infos-modal" 
+            tabindex="-1" 
+            aria-labelledby="movie-title" 
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-row d-flex">
+                        <div class="modal-left">
+                            <img src="" alt="" id="poster" class="poster img-responsive">
+                        </div>
+                        <div class="modal-right">
+                            <div class="modal-header">
+                                <h3 class="modal-title" 
+                                    id="movie-title">TITRE</h3>
+                                <button type="button" 
+                                        class="btn-close" 
+                                        data-bs-dismiss="modal" 
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6 id="release-date">date</h6>
+                                <p id="plot">infos</p>
+                                <div class="mt-3">
+                                    <button type="button" 
+                                            class="btn btn-secondary" 
+                                            data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+                crossorigin="anonymous"></script>
+        <script src="./scripts/foreach_polyfill.js"></script>
+        <script src="./scripts/Intersection_observer_polyfill.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    margin: 0 0 1rem 0;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+img {
+    height: 10rem;
+}
+
+.form-check {
+    padding-left: 0;
+}
+
+.modal-content {
+    padding: 1rem 1.5rem;
+    flex-direction: row;
+}
+
+.modal-left {
+    display: flex;
+    align-items: center;
+}
+
+.modal-header {
+    padding-bottom: 0;
+    align-items: flex-start;
+    border-bottom: 0;
+}
+
+.modal-body p {
+    line-height: 1.25;
+}
+
+.modal-title {
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+#poster {
+    height: 20rem;
+}
+
+.opacity-0 {
+    opacity: 0;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
